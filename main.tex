@@ -15,7 +15,7 @@
 %	NAME AND CURRICULUM VITAE TEXT
 %----------------------------------------------------------------------------------------
 
-\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+\parbox[top][0.06\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\centering % Centre text
 	{\sffamily\Huge Anna Novoseltseva}\\\medskip % Your name
@@ -25,13 +25,41 @@
 %	MAJOR RESEARCH PROJECT
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	\educationentry{2016-2018} % Duration
+	{Master of Science} % Degree
+	{GPA: 3.9/4.0} % Honours, achievements or distinctions (e.g. first class honours)
+	{Biomedical Engineering} % Department
+	{Worcester Polytechnic Institute} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{2011 -- 2015} % Duration
+	{Bachelor of Science} % Degree
+	{GPA: 4.8/5.0} % Honours, achievements or distinctions (e.g. first class honours)
+	{Biotechnical Systems and Technologies} % Department
+	{Tomsk Polytechnic University} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
 \section{Research Experience}
 
 \workposition{JAN 2017 - AUG 2018} % Duration
 {} % FT/PT (full time or part time)
 {Worcester Polytechnic Institute, Worcester, MA, USA} % Employer
 {Master`s thesis} % Job title
-{Designed, prototyped, and and tested a three-axis force measurement device for the da Vinci surgical system to provide haptic feedback to the operator based on forces applied to the instruments. Designed electronics and analog control circuits. Developed a ROS package to interface with the da Vinci Research Kit.} % Description
+{Designed, prototyped, and tested a three-axis force measurement device for the da Vinci surgical system to provide haptic feedback to the operator based on forces applied to the instruments. Designed electronics and analog control circuits. Developed a ROS package to interface with the da Vinci Research Kit.} % Description
 
 %------------------------------------------------
 
@@ -82,42 +110,6 @@ between PC and developed device.}  % Description
 
 \vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
 
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
-\section{References}
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Gregory S. Fischer}}{spaceafter}
-	\tableentry{Position}{Professor}{}
-	\tableentry{Employer}{\href{https://www.wpi.edu/people/faculty/gfischer}{Department of Mechanical Engineering}}{}
-	\tableentry{}{\href{https://www.wpi.edu}{\textit{Worcester Polytechnic Institute}}}{spaceafter}
-	\tableentry{Email}{\href{mailto:gfischer@wpi.edu}{gfischer@wpi.edu}}{}
-	\tableentry{Phone}{+1-508-831-5261 (Work)}{}
-	
-	%------------------------------------------------
-	
-	\tableentry{}{}{} % Creates some additional whitespace between the references
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Ilya Yaroslavsky}}{spaceafter}
-	\tableentry{Position}{Manager of Advanced Product Development}{}
-	\tableentry{Employer}{\href{https://www.ipgphotonics.com/}{IPG Medical}}{spaceafter}
-	\tableentry{Email}{\href{mailto:iyaroslavsky@ipgphotonics.com}{iyaroslavsky@ipgphotonics.com}}{}
-	\tableentry{Phone}{+1 (508) 373-1100 (Work)}{}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
 
 \switchcolumn % Switch to the next paracol column
 
@@ -125,7 +117,7 @@ between PC and developed device.}  % Description
 %	COLOURED CONTACT DETAILS BOX
 %----------------------------------------------------------------------------------------
 
-\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+\parbox[top][0.06\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
 	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
 	\colorbox{shade}{ % Create the coloured box
 		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
@@ -134,44 +126,6 @@ between PC and developed device.}  % Description
 		\end{supertabular}
 	}
 }
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education} 
-
-% Blank \educationentry{} command to add another degree:
-
-%\educationentry{} % Duration
-%{} % Degree
-%{} % Honours, achievements or distinctions (e.g. first class honours)
-%{} % Department
-%{} % Institution
-
-% All 5 parameters must be supplied but any can be empty if you don't need them
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-
-	\educationentry{2016-2018} % Duration
-	{Master of Science} % Degree
-	{GPA: 3.9/4.0} % Honours, achievements or distinctions (e.g. first class honours)
-	{Biomedical Engineering} % Department
-	{Worcester Polytechnic Institute} % Institution
-	
-	%------------------------------------------------
-	
-	\educationentry{2011 -- 2015} % Duration
-	{Bachelor of Science} % Degree
-	{GPA: 4.8/5.0} % Honours, achievements or distinctions (e.g. first class honours)
-	{Biotechnical Systems and Technologies} % Department
-	{Tomsk Polytechnic University} % Institution
-	
-	%------------------------------------------------
-
-\end{supertabular}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS
@@ -187,70 +141,36 @@ between PC and developed device.}  % Description
 % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
 
 %------------------------------------------------
-
 \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 	
 	%------------------------------------------------
 	
-	\tableentry{2016}{\textbf{Fulbright Scholarship}}{}
-	\tableentry{}{\textit{Worcester Polytechnic Institute}}{spaceafter}
+	\tableentry{2016 - 2018}{Fulbright Scholarship}{spaceafter}
 	
 	%------------------------------------------------
 	
-	\tableentry{2015}{\textbf{1st Place Team, All-Russian Student Competition on Electronics}}{}
-	\tableentry{}{\textit{Tomsk Polytechnic University}}{spaceafter}
+	\tableentry{2015}{1\textsuperscript{st} team place in All-Russian Student}{}
+	\tableentry{}{Competition on Electronics}{spaceafter}
+
+	%------------------------------------------------
 	
+	\tableentry{2014}{1\textsuperscript{st} team place in the regional stage in}
+	{}
+	\tableentry{}{All-Russian Student Competition on}{}
+	{}
+	\tableentry{}{Electronics}{spaceafter}
+
 	%------------------------------------------------
 	
 \end{supertabular}
 
-%----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
-
-\section{Computer Skills} 
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
-
-%------------------------------------------------
-
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{Beginner}{Java, MS DOS}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
-	\tableentry{}{Microsoft Windows}{}
-	\tableentry{}{Computer Hardware \& Support}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS
 %----------------------------------------------------------------------------------------
 
 \section{Communication Skills}
-
-% Example \tableentry{} command to add another line:
-
-%\tableentry{Heading}{Content}{spaceafter}
-
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
 
 %------------------------------------------------
 
@@ -282,12 +202,49 @@ between PC and developed device.}  % Description
 
 %------------------------------------------------
 
-\longformdescription{Goal Oriented}{I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.}
+\longformdescription{Programming Languages}{C \textbullet{} Matlab \textbullet{} Python \textbullet{} ROS \textbullet{}  LaTex \textbullet{} Visual Basic \textbullet{} C\#}
 
 \longformdescription{Physical Dexterity}{Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.}
 
 \longformdescription{Passionate}{I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.}
 
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+% \section{References}
+
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{}{\textbf{Dr. Gregory S. Fischer}}{spaceafter}
+% 	\tableentry{Position}{Professor}{}
+% 	\tableentry{Employer}{\href{https://www.wpi.edu/people/faculty/gfischer}{Department of Mechanical Engineering}}{}
+% 	\tableentry{}{\href{https://www.wpi.edu}{\textit{Worcester Polytechnic Institute}}}{spaceafter}
+% 	\tableentry{Email}{\href{mailto:gfischer@wpi.edu}{gfischer@wpi.edu}}{}
+% 	\tableentry{Phone}{+1-508-831-5261 (Work)}{}
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+% 	%------------------------------------------------
+	
+% 	\tableentry{}{\textbf{Dr. Ilya Yaroslavsky}}{spaceafter}
+% 	\tableentry{Position}{Manager of Advanced Product Development}{}
+% 	\tableentry{Employer}{\href{https://www.ipgphotonics.com/}{IPG Medical}}{spaceafter}
+% 	\tableentry{Email}{\href{mailto:iyaroslavsky@ipgphotonics.com}{iyaroslavsky@ipgphotonics.com}}{}
+% 	\tableentry{Phone}{+1 (508) 373-1100 (Work)}{}
+	
+% 	%------------------------------------------------
+	
+% \end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+% %----------------------------------------------------------------------------------------
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
@@ -299,10 +256,22 @@ between PC and developed device.}  % Description
 %\longformpublication{Reference (format this manually as desired)}
 
 %------------------------------------------------
+\longformpublication{\textbf{Novoseltseva A.} (2018). "Force Feedback for the Patient Side Manipulator of the daVinci Research Kit", \textit{Masters Theses (All Theses, All Years)}, https://digitalcommons.wpi.edu/etd-theses/312 }
 
-\longformpublication{\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.}
+\longformpublication{Yaroslavsky I., Vinnichenko V., McNeill T., \textbf{Novoseltseva A.}, Perchuk I., Vybornov A., Altshuler G., Gapontsev V. (2018). "Optimization of a novel Tm fiber laser lithotripter in terms of stone ablation efficiency and retropulsion reduction" \textit{Proc. SPIE 10468, Therapeutics and Diagnostics in Urology 2018}, 104680H doi: 10.1117/12.2291089;} 
 
-\longformpublication{Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.}
+\longformpublication{\textbf{Novoseltseva A.}, Aristov A., Timchenko K. (2016). Experimental Facility Control System for Optical Studies in the Frame of Problem Solving of Brain Hematoma Diagnostics, \textit{IOP Conference Series: Materials Science and Engineering,}, Vol 93, No 012002, pp 1-5.}
+
+\longformpublication{\textbf{Novoseltseva A.}, Aristov A., Timchenko K. (2016). Experimental Facility Control System for Optical Studies in the Frame of Problem Solving of Brain Hematoma Diagnostics, \textit{IOP Conference Series: Materials Science and Engineering,}, Vol 93, No 012002, pp 1-5.}
+
+\longformpublication{\textbf{Novoseltseva A.}, Musorov I., Torgaev S., Aristov A., (2016). The Control System of the Opotoelectronic Sensor, \textit{IV International
+Forum for Young Scientists ”Space Engineering”}, pp 262-265.}
+
+\longformpublication{Aristov A., Timchenko K., \textbf{Novoseltseva A.}, Kustov D., Larioshina I., (2016). Designing of Phantom Head Used in Optical Diagnostics of Brain Injury, \textit{Journal of Physics: Conference Series}, Vol 671, No 012002, pp 1-5.}
+
+\longformpublication{Timchenko K., \textbf{Novoseltseva A.}, Aristov A., (2016). Research of the Methods for Reading Optical Density on Different Parts of Human Head, \textit{IV International Forum for Young Scientists ”Space Engineering”},pp 272-277}
+
+\longformpublication{Timchenko K, Novoseltseva A, Aristov A, (2015). Designing of Phantom Head for Conducting Optical Researches, \textit{Atomic and molecular pulsed lasers : The 12th International Conference},pp 132}
 
 %------------------------------------------------
 
@@ -318,30 +287,30 @@ between PC and developed device.}  % Description
 
 %------------------------------------------------
 
-\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+% \begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
 	
-	%------------------------------------------------
+% 	%------------------------------------------------
 	
-	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+% 	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
 	
-	%------------------------------------------------
+% 	%------------------------------------------------
 	
-	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
-	\doipublication{1986}{10.1139/v86-297}{}{}
+% 	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+% 	\doipublication{1986}{10.1139/v86-297}{}{}
 	
-	%------------------------------------------------
+% 	%------------------------------------------------
 	
-	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+% 	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
 	
-	%------------------------------------------------
+% 	%------------------------------------------------
 	
-	& \textit{First author publications in} \textbf{bold}\\
+% 	& \textit{First author publications in} \textbf{bold}\\
 	
-	%------------------------------------------------
+% 	%------------------------------------------------
 	
-\end{supertabular}
+% \end{supertabular}
 
-\medskip % Extra whitespace before the next section
+% \medskip % Extra whitespace before the next section
 
 %----------------------------------------------------------------------------------------
 
